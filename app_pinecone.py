@@ -169,8 +169,3 @@ if st.button("Run Task"):
             st.image(img)
 
         # Image-to-image search
-
-st.divider()
-if st.button("Reset Session"):
-    st.session_state.clear()
-    st.rerun()
