@@ -158,7 +158,7 @@ if st.button("Run Task"):
     else:
         with st.spinner("Searching from vector database..."):
             query_embedding = get_single_text_embedding(query).flatten().tolist()
-            results = my_index.query(vector=query_embedding, top_k=1, include_metadata=True)
+            results = my_index.query(vector=query_embedding, top_k=2, include_metadata=True)
     
         st.divider()
         st.markdown("### ✨ Results:")
