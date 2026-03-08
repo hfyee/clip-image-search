@@ -150,7 +150,7 @@ with st.spinner("Upserting data to Pinecone..."):
     print(my_index.describe_index_stats())
 
 # Text-to-image search
-query = st.text_input("Search images by text:", placeholder="e.g., Tern bike, tangerine color")
+query = st.text_input("Search bike images by text:", placeholder="e.g., Tern bike, tangerine color")
 
 if st.button("Run Task"):
     if not query:
