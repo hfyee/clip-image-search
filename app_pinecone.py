@@ -115,6 +115,7 @@ with st.spinner("Vector embedding..."):
 
     image_data_df["vector_id"] = image_data_df.index
     image_data_df["vector_id"] = image_data_df["vector_id"].apply(str)
+    print(image_data_df.head())
 
     # Get all the metadata
     final_metadata = []
